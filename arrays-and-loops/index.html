@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arrays and Loops</title> <!-- Array is a value; represents a list of values -->
+</head>
+<body>
+    <script>
+        /*
+    const myArray = [10, 20, 30]; // array; represents a list of three numbers.
+    console.log(myArray); // [10, 20, 30]
+
+    console.log(myArray[0]); // 10 | 0 represents the first value; 1 represents the second value, etc. In this case, the first value is 10.
+        myArray[0] = 99;
+        console.log(myArray); // [99, 20, 30]; we changed the first value to 99.
+
+        [1, 'hello', true, { name: 'socks'}, [1, 2]] // value, string, boolean, object can all be within the array.
+
+        console.log(typeof [1, 2]); // an array is a special type of object.
+        console.log(Array.isArray([1, 2])); // true; this is a way to check if something is an array.
+
+        console.log(myArray.length); // 3; the length property gives us the number of values in the array.
+
+        myArray.push(100); // adds a value to the end of the array.
+        console.log(myArray); // [99, 20, 30, 100]
+
+        myArray.splice(0, 1); // removes a value from the end of the array. IMPORTANT: the first value is the index, the second value is the number of values to remove.
+        console.log(myArray); // [20, 30, 100]; the first value was removed.
+        */
+
+        let i = 1;
+
+        // while loop; while the code is true, it keeps running over and over until the condition is false.
+
+        while(i <= 5) { // if code is true; it keeps going. If false, it stops and goes to next line.
+        console.log(i);
+            i++;  // Increment i to prevent infinite loop. (Increment Step; makes sure the loop ends.)
+            // everytime we loop over the code, we increase i by 1, and eventually, i will be greater than 5, and the loop will stop. So this would loop five times.
+        }
+
+    </script>
+</body>
+</html>
+
+<!-- Array Syntax Rules
+ - to Create an Array, we start with an open square and close with a closed bracket
+ - Inside, we can put a list of values separated via comma.
+ - if we want to get the value within the array, we can use square brackets and a value like 1, or the "Index", which is the position in the array. Ex. 0 would be position 1, 1 would be 2, etc. -->
+
+ <!-- Array Methods
+ - Array.isArray(value) - checks if a value is an array.
+ - arr.push(value) - adds a value to the end of the array.
+ - arr.pop() - removes the last value from the array and returns it.
+ - arr.shift() - removes the first value from the array and returns it.
+ - arr.splice() - removes a value from the array at a specific index.
